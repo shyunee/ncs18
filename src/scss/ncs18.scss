@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  font: {
+    size: 10px;
+    family: 'Nanum Gothic', sans-serif;
+  }
+  box-sizing: border-box;
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+  section {
+    width: 60rem;
+    height: 20rem;
+    & > div {
+      width: 100%;
+      height: 5rem;
+      font-size: 1.8rem;
+      line-height: 5rem;
+      word-spacing: 6rem;
+      padding-left: 3rem;
+      border: {
+        bottom: 0.1rem solid #333;
+        right: 0.1rem solid #333;
+      }
+      &:first-child {
+        background-color: lightgray;
+        word-spacing: 5.3rem;
+        padding-left: 4rem;
+      }
+    }
+  }
+}
